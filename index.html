@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Image for 3D Video</title>
+    <title>Upload Image or Enter Text for 3D Video</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         body {
@@ -20,17 +19,18 @@
     </style>
 </head>
 <body>
-    <h1>Upload an Image to Get a 3D Video</h1>
+    <h1>Upload an Image or Enter Text to Get a 3D Video</h1>
     <form id="uploadForm">
-        <label for="title">Capture Title:</label>
-        <input type="text" name="title" id="title" required>
+        <label for="textTitle">Enter Text:</label>
+        <input type="text" name="textTitle" id="textTitle">
         <br><br>
         <label for="file">Select Image/Video:</label>
-        <input type="file" name="file" id="file" required>
+        <input type="file" name="file" id="file">
         <br><br>
-        <input type="submit" value="Upload">
+        <input type="submit" value="Generate 3D Video">
     </form>
     <div class="status" id="status"></div>
+    <div id="status_button" class="status"></div>
 
     <script src="script.js"></script>
 </body>
